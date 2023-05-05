@@ -1,0 +1,109 @@
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #ccc;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline li:before,
+.timeline li:after {
+  content: '';
+  display: table;
+}
+
+.timeline li:after {
+  clear: both;
+}
+/* starting square divs*/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fcfcfc;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+}
+
+.timeline li .timeline-panel:before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+}
+
+.timeline li .timeline-panel:after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+}
+
+.timeline li .timeline-image {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(47, 8, 175, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 50px;
+  background: #3858e9;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-left-width: 15px;
+  border-right-width: 0;
+  border-left-color: #ccc;
+  border-right-color: transparent;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-left-width: 14px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  border-right-color: transparent;
+}
+
+.timeline li:last-child {
+  margin-bottom: 0;
+}
+
