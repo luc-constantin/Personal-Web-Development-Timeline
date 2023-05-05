@@ -114,3 +114,8 @@ h1 {
   margin-bottom: 0;
 }
 
+footer {
+  font-size: 12px;
+  text-align: center;
+  margin: 80px;
+}
