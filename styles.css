@@ -1,10 +1,16 @@
 
+h1 {
+  text-align: center;
+  margin: 55px;
+}
+
 .timeline {
   list-style: none;
   padding: 0;
   position: relative;
 }
 
+/* vertical line */
 .timeline:before {
   content: '';
   position: absolute;
@@ -13,7 +19,7 @@
   left: 50%;
   width: 2px;
   margin-left: -1px;
-  background-color: #ccc;
+  background-color: #3858e9;
 }
 
 .timeline li {
@@ -30,14 +36,14 @@
 .timeline li:after {
   clear: both;
 }
-/* starting square divs*/
+/*square divs*/
 .timeline li .timeline-panel {
   width: 46%;
   float: left;
   background: #fcfcfc;
   padding: 20px;
   position: relative;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #3858e9;
   border-radius: 2px;
 }
 
@@ -70,6 +76,7 @@
   position: absolute;
   left: 50%;
   border-radius: 50%;
+  border: 3px solid #ffffff;
   box-shadow: 0 4px 8px 0 rgba(47, 8, 175, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: -25px;
   width: 50px;
