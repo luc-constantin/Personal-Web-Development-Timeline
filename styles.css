@@ -125,3 +125,21 @@ footer {
   text-align: center;
   margin: 80px;
 }
+
+@media (max-width: 600px) {
+  .timeline:before {
+    left: 20px;
+  }
+  .timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    float: right;
+  }
+  .timeline li .timeline-image {
+    left: 0;
+    margin-left: 0;
+  }
+  .timeline li.timeline-inverted .timeline-panel {
+    float: right;
+  }
+}
+
